@@ -29,6 +29,7 @@ background-color: rgb(9, 0, 17);
     align-items: center;
 }
 
+
 .main-navbar h1 a{
     text-decoration: none;
     color: white;
@@ -75,7 +76,7 @@ background-color: rgb(9, 0, 17);
 }
 
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
     .navbar{
         padding: 1.5rem 4rem;
     }
