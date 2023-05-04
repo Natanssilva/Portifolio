@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root{
+    --color-primary:#f3f5f8 ;
+    --color-font: #3d535f;
+}
+
+
+
+body{
+    overflow: hidden;
+    transition: background 0.2s linear;
+}
+
+body.dark{
+    background-color: black;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-primary);
+}
+
+.container::before{
+    background-color: black;
+}
+
+.container.active::before{
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+    
+}
+
+.logo{
+    display: flex;
+
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--color-font);
+    letter-spacing: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}   
+
+.itemsMenu{
+    display: flex;
+   
+}
+
+.itemsMenu li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+
+.itemsMenu a{
+
+    font-size: 25px;
+    color: var(--color-font);
+    text-decoration: none;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    
+}
+
+
+.button{
+    width: 75px;
+    height: 40px;
+    border: 5px solid var(--color-font);
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    background: var(--color-font);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 2px 0px 4px 4px;
+    
+}
+
+.button.active::before{
+    right: 100px;
+    margin: 2px -40px 0px 0px;
+    
+    transition: 1s;
+}
