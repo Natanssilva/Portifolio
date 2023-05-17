@@ -208,7 +208,7 @@ img{
     grid-template-columns: 1fr 1fr ;
     max-width: 100%;
     height: 100vh;
-    background-image: url(/assets/images/background-purple.svg);
+    background-image: url("/assets/images/background-purple.svg");
     background-size: cover;
    
 }
